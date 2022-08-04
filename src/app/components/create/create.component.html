@@ -1,0 +1,16 @@
+<h2>Comoponent Create</h2>
+<form action="" [formGroup]="postForm" (ngSubmit)="onSubmit()" novalidate class="">
+    <div class="mb-3">
+       <label for="" class="form-label">Title</label>
+       <input for="" formControlName="title" type="text" class="form-control" requiered>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Content</label>
+        <input for="" formControlName="content" type="text" class="form-control" requiered>
+    </div>
+     <div class="mb-3">
+        <label for="" class="form-label">Author</label>
+        <input for="" formControlName="author" type="text" class="form-control" requiered>
+     </div>
+      <button [disabled]="!postForm.valid" type="submit" class="btn btn-primary">Store</button>
+</form> 
